@@ -19,7 +19,7 @@
     "ethereum"
   ],
   "author": "myhn",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/huynhngocmyibl/validate_crypto_address/issues"
   },
