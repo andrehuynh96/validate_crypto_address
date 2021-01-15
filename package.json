@@ -1,5 +1,5 @@
 {
-  "name": "validator-crypto-address",
+  "name": "validator-staking-address",
   "version": "1.0.0",
   "description": "validator format crypto address",
   "main": "src/index.js",
