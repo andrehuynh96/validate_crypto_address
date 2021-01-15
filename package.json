@@ -1,0 +1,27 @@
+{
+  "name": "validator-crypto-address",
+  "version": "1.0.0",
+  "description": "validator format crypto address",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huynhngocmyibl/validate_crypto_address.git"
+  },
+  "keywords": [
+    "validator",
+    "address",
+    "crypto",
+    "blockchain",
+    "bitcoin",
+    "ethereum"
+  ],
+  "author": "myhn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/huynhngocmyibl/validate_crypto_address/issues"
+  },
+  "homepage": "https://github.com/huynhngocmyibl/validate_crypto_address#readme"
+}
