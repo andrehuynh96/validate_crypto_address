@@ -1,8 +1,11 @@
 {
-  "name": "validator-staking-address",
+  "name": "validator-crypto-address",
   "version": "0.0.1",
-  "description": "validator format crypto address",
+  "description": "validate staking crypto address",
   "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,17 +14,19 @@
     "url": "git+https://github.com/huynhngocmyibl/validate_crypto_address.git"
   },
   "keywords": [
-    "validator",
-    "address",
+    "validate",
     "crypto",
-    "blockchain",
-    "bitcoin",
-    "ethereum"
+    "staking"
   ],
   "author": "myhn",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/huynhngocmyibl/validate_crypto_address/issues"
   },
-  "homepage": "https://github.com/huynhngocmyibl/validate_crypto_address#readme"
+  "homepage": "https://github.com/huynhngocmyibl/validate_crypto_address#readme",
+  "dependencies": {
+    "chai": "4.2.0",
+    "lodash": "4.17.20",
+    "mocha": "7.0.1"
+  }
 }

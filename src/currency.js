@@ -1,47 +1,47 @@
 const currencies = [
-  { name: 'Ethereum', symbol: 'eth' },
-  { name: 'Cosmos', symbol: 'atom' },
-  { name: 'Iris', symbol: 'iris' },
-  { name: 'Ontology', symbol: 'ont' },
-  { name: 'Ontology Gas', symbol: 'ong' },
-  { name: 'Cardano', symbol: 'ada' },
-  { name: 'Bitcoin', symbol: 'btc' },
-  { name: 'Tether USD', symbol: 'usdt' },
-  { name: 'Bitcoin Cash', symbol: 'bch' },
-  { name: 'Litecoin', symbol: 'ltc' },
-  { name: 'Dogecoin', symbol: 'doge' },
-  { name: 'Dash', symbol: 'dash' },
-  { name: 'Stellar', symbol: 'xlm' },
-  { name: 'TRON', symbol: 'trx' },
-  { name: 'Ethereum Classic', symbol: 'etc' },
-  { name: 'TomoChain', symbol: 'tomo' },
-  { name: 'EOS', symbol: 'eos' },
-  { name: 'Tezos', symbol: 'xtz' },
-  { name: 'NEO', symbol: 'neo' },
-  { name: 'Harmony', symbol: 'one' },
-  { name: 'V.systems', symbol: 'vsys' },
-  { name: 'Qtum', symbol: 'qtum' },
-  { name: 'Binance Coin', symbol: 'bnb' },
-  { name: 'Gas', symbol: 'gas' },
-  { name: 'Centrality', symbol: 'cennz' },
-  { name: 'Quras', symbol: 'xqc' },
-  { name: 'Sylo', symbol: 'sylo' },
-  { name: 'Polkadot', symbol: 'dot' },
-  { name: 'Filecoin', symbol: 'fil' },
-  { name: 'TON Crystal', symbol: 'ton' }
+  { name: 'ethereum', symbol: 'eth' },
+  { name: 'cosmos', symbol: 'atom' },
+  { name: 'iris', symbol: 'iris' },
+  { name: 'ontology', symbol: 'ont' },
+  { name: 'ontology gas', symbol: 'ong' },
+  { name: 'cardano', symbol: 'ada' },
+  { name: 'bitcoin', symbol: 'btc' },
+  { name: 'tether usd', symbol: 'usdt' },
+  { name: 'bitcoin bash', symbol: 'bch' },
+  { name: 'litecoin', symbol: 'ltc' },
+  { name: 'dogecoin', symbol: 'doge' },
+  { name: 'dash', symbol: 'dash' },
+  { name: 'stellar', symbol: 'xlm' },
+  { name: 'tron', symbol: 'trx' },
+  { name: 'ethereum classic', symbol: 'etc' },
+  { name: 'tomochain', symbol: 'tomo' },
+  { name: 'eos', symbol: 'eos' },
+  { name: 'tezos', symbol: 'xtz' },
+  { name: 'neo', symbol: 'neo' },
+  { name: 'harmony', symbol: 'one' },
+  { name: 'v.systems', symbol: 'vsys' },
+  { name: 'qtum', symbol: 'qtum' },
+  { name: 'binance coin', symbol: 'bnb' },
+  { name: 'gas', symbol: 'gas' },
+  { name: 'centrality', symbol: 'cennz' },
+  { name: 'quras', symbol: 'xqc' },
+  { name: 'sylo', symbol: 'sylo' },
+  { name: 'polkadot', symbol: 'dot' },
+  { name: 'filecoin', symbol: 'fil' },
+  { name: 'ton crystal', symbol: 'ton' }
 ];
 
 module.exports = {
   getCurrencies: (currencyNameOrSymbol) => {
     const nameOrSymbol = currencyNameOrSymbol.toLowerCase();
-
+    let result;
     currencies.forEach(item=> {
       if (item.name === nameOrSymbol || item.symbol === nameOrSymbol) {
-        return item;
+        result = { ...item };
       }
     });
 
-    return null;
+    return result;
   },
 };
 
